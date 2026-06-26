@@ -18,9 +18,9 @@
 -(bool)sfCameraFontSupported { return YES; }
 
 // QuickTake & Live Text
--(bool)isCTMSupported { return FALSE; }
--(bool)isCTMSupportSupressed { return NO; }
--(bool)deviceSupportsCTM { return FALSE; }
+// -(bool)isCTMSupported { return TRUE; }
+// -(bool)isCTMSupportSupressed { return NO; }
+// -(bool)deviceSupportsCTM { return TRUE; }
 -(bool)isLivePhotoAutoModeSupported { return TRUE; } //TESTED
 -(bool)isImageAnalysisSupported { return TRUE; }  //TESTED
 -(bool)isImageAnalysisButtonAlwaysVisible { return TRUE; }  //TESTED
