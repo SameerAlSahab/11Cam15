@@ -22,12 +22,12 @@
 -(bool)isCTMSupportSupressed { return NO; }
 -(bool)deviceSupportsCTM { return YES; }
 -(bool)isLivePhotoAutoModeSupported { return TRUE; }
--(bool)isImageAnalysisSupported { return FALSE; }
+-(bool)isImageAnalysisSupported { return TRUE; }
 -(bool)isImageAnalysisButtonAlwaysVisible { return FALSE; }
 
 // Over Capture (Spatial View Outside the Frame)
--(bool)isSpatialOverCaptureSupported { return YES; }
--(bool)isBackSpatialOverCaptureSupported { return YES; }
+-(bool)isSpatialOverCaptureSupported { return FALSE; }
+-(bool)isBackSpatialOverCaptureSupported { return FALSE; }
 
 // Video Formats & Framerates (Up to 4K60 & 1080p240)
 -(bool)isBack4k24VideoSupported { return YES; }
@@ -57,11 +57,11 @@
 -(bool)isLinearDNGSupported { return YES; }
 -(bool)enhancedRAWResolutionSupported { return YES; }
 -(bool)enhancedHEICResolutionSupported { return YES; }
--(bool)isSuperWideAutoMacroSupported { return YES; }
+-(bool)isSuperWideAutoMacroSupported { return FALSE; }
 
 
--(bool)isPortraitModeSupported { return YES; }
--(bool)isPortraitModeAvailable { return YES; }
+-(bool)isPortraitModeSupported { return FALSE; }
+-(bool)isPortraitModeAvailable { return FALSE; }
 -(bool)arePortraitEffectsSupported { return YES; }
 -(long long)supportedPortraitLightingVersion { return 2; }
 -(long long)numberOfSupportedPortraitLightingEffects { return 6; }
@@ -106,9 +106,9 @@
 
 %hook CAMUserPreferences
 -(bool)shouldUseVolumeUpBurst { return YES; }
--(bool)isPhotoOverCaptureEnabled { return YES; }
--(bool)isOverCapturePreviewEnabled { return YES; }
--(bool)isImageAnalysisEnabled { return YES; }
+-(bool)isPhotoOverCaptureEnabled { return FALSE; }
+-(bool)isOverCapturePreviewEnabled { return FALSE; }
+-(bool)isImageAnalysisEnabled { return FALSE; }
 %end
 
 // Format & Simulated Depth Specs
