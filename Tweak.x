@@ -70,8 +70,6 @@
 -(bool)isPortraitEffectIntensitySupported { return YES; }
 -(bool)isLivePreviewSupportedForLightingType:(long long)arg1 devicePosition:(long long)arg2 { return YES; }
 -(bool)isDepthEffectApertureSupported { return YES; }
--(bool)isPortraitEffectIntensitySupported { return YES; }
--(bool)_backStageLightPortaitEffectsSupported { return YES; }
 -(bool)isHighKeyPortraitSupported { return YES; }
 -(bool)isSoftwareDepthSupported { return YES; }
 -(bool)isMonocularDepthSupported { return YES; }
