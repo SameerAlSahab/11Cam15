@@ -13,7 +13,7 @@
 // UI & Zoom Controls
 -(bool)isZoomPlatterSupported { return YES; }
 -(long long)zoomDialStyle { return 1; }
--(bool)allowDynamicShutterZoom { return FALSE; }
+-(bool)allowDynamicShutterZoom { return TRUE; } //TESTED
 -(bool)isExposureSliderSupported { return YES; }
 -(bool)sfCameraFontSupported { return YES; }
 
@@ -21,13 +21,13 @@
 -(bool)isCTMSupported { return YES; }
 -(bool)isCTMSupportSupressed { return NO; }
 -(bool)deviceSupportsCTM { return YES; }
--(bool)isLivePhotoAutoModeSupported { return TRUE; }
--(bool)isImageAnalysisSupported { return TRUE; }
--(bool)isImageAnalysisButtonAlwaysVisible { return FALSE; }
+-(bool)isLivePhotoAutoModeSupported { return TRUE; } //TESTED
+-(bool)isImageAnalysisSupported { return TRUE; }  //TESTED
+-(bool)isImageAnalysisButtonAlwaysVisible { return FALSE; }  //TESTED
 
 // Over Capture (Spatial View Outside the Frame)
--(bool)isSpatialOverCaptureSupported { return FALSE; }
--(bool)isBackSpatialOverCaptureSupported { return FALSE; }
+-(bool)isSpatialOverCaptureSupported { return TRUE; }   //TESTED
+-(bool)isBackSpatialOverCaptureSupported { return TRUE; }  //TESTED
 
 // Video Formats & Framerates (Up to 4K60 & 1080p240)
 -(bool)isBack4k24VideoSupported { return YES; }
@@ -57,11 +57,11 @@
 -(bool)isLinearDNGSupported { return YES; }
 -(bool)enhancedRAWResolutionSupported { return YES; }
 -(bool)enhancedHEICResolutionSupported { return YES; }
--(bool)isSuperWideAutoMacroSupported { return FALSE; }
+-(bool)isSuperWideAutoMacroSupported { return TRUE; }  //TESTED
 
 
--(bool)isPortraitModeSupported { return FALSE; }
--(bool)isPortraitModeAvailable { return FALSE; }
+-(bool)isPortraitModeSupported { return TRUE; }
+-(bool)isPortraitModeAvailable { return TRUE; }
 -(bool)arePortraitEffectsSupported { return YES; }
 -(long long)supportedPortraitLightingVersion { return 2; }
 -(long long)numberOfSupportedPortraitLightingEffects { return 6; }
@@ -105,10 +105,10 @@
 
 
 %hook CAMUserPreferences
--(bool)shouldUseVolumeUpBurst { return YES; }
--(bool)isPhotoOverCaptureEnabled { return FALSE; }
--(bool)isOverCapturePreviewEnabled { return FALSE; }
--(bool)isImageAnalysisEnabled { return FALSE; }
+-(bool)shouldUseVolumeUpBurst { return YES; } 
+-(bool)isPhotoOverCaptureEnabled { return TRUE; }  //TESTED
+-(bool)isOverCapturePreviewEnabled { return TRUE; }  //TESTED
+-(bool)isImageAnalysisEnabled { return TRUE; }  //TESTED
 %end
 
 // Format & Simulated Depth Specs
