@@ -13,7 +13,7 @@
 // UI & Zoom Controls
 -(bool)isZoomPlatterSupported { return YES; }
 -(long long)zoomDialStyle { return 1; }
--(bool)allowDynamicShutterZoom { return YES; }
+-(bool)allowDynamicShutterZoom { return FALSE; }
 -(bool)isExposureSliderSupported { return YES; }
 -(bool)sfCameraFontSupported { return YES; }
 
@@ -21,9 +21,9 @@
 -(bool)isCTMSupported { return YES; }
 -(bool)isCTMSupportSupressed { return NO; }
 -(bool)deviceSupportsCTM { return YES; }
--(bool)isLivePhotoAutoModeSupported { return FALSE; }
--(bool)isImageAnalysisSupported { return YES; }
--(bool)isImageAnalysisButtonAlwaysVisible { return YES; }
+-(bool)isLivePhotoAutoModeSupported { return TRUE; }
+-(bool)isImageAnalysisSupported { return FALSE; }
+-(bool)isImageAnalysisButtonAlwaysVisible { return FALSE; }
 
 // Over Capture (Spatial View Outside the Frame)
 -(bool)isSpatialOverCaptureSupported { return YES; }
