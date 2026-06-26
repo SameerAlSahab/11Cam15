@@ -21,7 +21,7 @@
 -(bool)isCTMSupported { return YES; }
 -(bool)isCTMSupportSupressed { return NO; }
 -(bool)deviceSupportsCTM { return YES; }
--(bool)isLivePhotoAutoModeSupported { return YES; }
+-(bool)isLivePhotoAutoModeSupported { return FALSE; }
 -(bool)isImageAnalysisSupported { return YES; }
 -(bool)isImageAnalysisButtonAlwaysVisible { return YES; }
 
@@ -35,8 +35,8 @@
 -(bool)isBack4k60VideoSupported { return YES; }
 -(bool)isBack1080p240Supported { return YES; }
 -(long long)back1080pMaxFPS { return 240; }
--(long long)frontHighFrameRate1080pMaxFPS { return 60; }
--(long long)backHighFrameRate1080pMaxFPS { return 240; }
+// -(long long)frontHighFrameRate1080pMaxFPS { return 60; }
+// -(long long)backHighFrameRate1080pMaxFPS { return 240; }
 
 
 -(bool)isQuickVideoConfigurationSupported { return YES; }
@@ -46,17 +46,14 @@
 
 // Cinematic Mode, ProRes, HDR10 Video
 -(bool)isCinematicModeSupported { return YES; }
--(bool)cinematic4KSupported { return YES; }
+-(bool)cinematic4KSupported { return FALSE; }
 -(bool)isProResVideoSupported { return YES; }
 -(bool)isProResVideoSupportedForMode:(long long)arg1 videoConfiguration:(long long)arg2 { return YES; }
 -(bool)isHDR10BitVideoSupported { return YES; }
--(bool)isHDR10BitVideoSupports60FPS { return YES; }
+-(bool)isHDR10BitVideoSupports60FPS { return FALSE; }
 -(bool)isHDR10BitVideoSupportedForVideoConfiguration:(long long)arg1 videoEncodingBehavior:(long long)arg2 { return YES; }
 
 
--(bool)isSmartHDRSupported { return YES; }
--(bool)isModernHDRSupported { return YES; }
--(bool)isHDREV0CaptureSupported { return YES; }
 -(bool)isLinearDNGSupported { return YES; }
 -(bool)enhancedRAWResolutionSupported { return YES; }
 -(bool)enhancedHEICResolutionSupported { return YES; }
