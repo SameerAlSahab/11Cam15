@@ -60,20 +60,6 @@
 -(bool)isSuperWideAutoMacroSupported { return TRUE; }  //TESTED
 
 
--(bool)isPortraitModeSupported { return TRUE; }
--(bool)isPortraitModeAvailable { return TRUE; }
--(bool)arePortraitEffectsSupported { return YES; }
--(long long)supportedPortraitLightingVersion { return 2; }
--(long long)numberOfSupportedPortraitLightingEffects { return 6; }
--(bool)_backStageLightPortaitEffectsSupported { return YES; }
--(bool)isBackLiveStageLightSupported { return YES; }
--(bool)isPortraitEffectIntensitySupported { return YES; }
--(bool)isLivePreviewSupportedForLightingType:(long long)arg1 devicePosition:(long long)arg2 { return YES; }
--(bool)isDepthEffectApertureSupported { return YES; }
--(bool)isHighKeyPortraitSupported { return YES; }
--(bool)isSoftwareDepthSupported { return YES; }
--(bool)isMonocularDepthSupported { return YES; }
-
 %end
 
 
@@ -111,12 +97,4 @@
 -(bool)isImageAnalysisEnabled { return TRUE; }  //TESTED
 %end
 
-// Format & Simulated Depth Specs
-%hook AVCaptureDeviceFormat
--(float)minSimulatedAperture { return 1.4; }
--(float)maxSimulatedAperture { return 16; }
--(float)defaultSimulatedAperture { return 4.5; }
--(float)minPortraitLightingEffectStrength { return 0; }
--(float)maxPortraitLightingEffectStrength { return 100; }
--(float)defaultPortraitLightingEffectStrength { return 50; }
-%end
+
